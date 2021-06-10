@@ -42,6 +42,8 @@ handler.handleReqRes = (req, res) => {
     ? routes[trimmedPath]
     : notFoundHandler;
 
+  console.log(routes[trimmedPath]);
+
   chosenHandler(requestProperties, (statusCode, payload) => {
     statusCode = typeof statusCode === "number" ? statusCode : 500;
     payload = typeof payload === "object" ? payload : {};
@@ -62,7 +64,7 @@ handler.handleReqRes = (req, res) => {
 
     console.log(realData);
     // response handle
-    res.end("Hello world");
+    // res.end("Hello world");
   });
 };
 

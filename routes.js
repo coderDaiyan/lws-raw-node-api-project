@@ -7,7 +7,6 @@
 
 const { sampleHandler } = require("./handlers/routeHandlers/sampleHandler");
 
-// * dependencies
 const routes = {
   sample: sampleHandler,
 };

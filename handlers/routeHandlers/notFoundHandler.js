@@ -8,9 +8,9 @@
 // * modules scaffolding
 const handler = {};
 
-handler.notFoundHandler = (reqProps, callback) => {
+handler.notFoundHandler = (requestProperties, callback) => {
   callback(404, {
-    message: "Not Found! Try again",
+    message: "Your requested URL was not found!",
   });
 };
 
